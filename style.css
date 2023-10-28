@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    
+    background: rgb(226, 252, 252);
+}
+/*---start header section---*/
+.header{
+    background: rgb(142, 232, 235);
+    padding: 10px;
+    margin: 0 auto;
+}
+.header h1{
+    text-align: center;
+    font-size: 3rem;
+    font-family:'Archivo Black', sans-serif;
+}
+/*----end header section*/
+/*---start contact section--*/
+.nav-menu{
+    padding: 1% 5%;
+    background: rgb(238, 125, 125);
+}
+.nav-menu a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+    padding: 10px;
+    display: block;
+}
+.nav-menu a:hover{
+    background: rgba(19, 6, 56, 0.808);
+    text-decoration: underline;
+   
+    border-radius: 8px;
+}
+/*---end contact section--*/
+/*---start main section--*/
+.main{
+    padding: 1%;
+    background: rgba(171, 241, 234, 0.678);
+}
+.span{
+    font-size: 700;
+}
+.aside{
+    padding: 1% 5%;
+    background: rgba(119, 214, 183, 0.808);
+    text-align: center;
+}
+
+/*---end main section--*/
+/*---start footer section--*/
+.footer{
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.8rem;
+    
+}
+/*---end main section--*/
+/*---for desktop---*/
+.col-1 {width: 8.33%}
+.col-2 {width: 16.66%}
+.col-3 {width: 24.99%}
+.col-4 {width: 33.32%}
+.col-5 {width: 41.65%}
+.col-6 {width: 49.98%}
+.col-7 {width: 58.31%}
+.col-8 {width: 66.64%}
+.col-9 {width: 74.97%}
+.col-10 {width: 83.3%}
+.col-11 {width: 91.63%}
+.col-12 {width: 100%}
+
+[class*=col-]{
+    float: left;
+    padding: 10px;
+}
+
+.clear-div{
+    clear: both;
+}
+@media screen and (max-width:768px) {
+    [class*="col-"]{
+        width: 100%;
+    }
+    .nav-menu a{
+        text-decoration: none;
+        text-align: center;
+        color: white;
+        font-size: 1.3rem;
+        padding: 10px;
+    }
+    
+}
